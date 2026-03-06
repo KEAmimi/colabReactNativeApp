@@ -8,6 +8,7 @@ import { maltheComponent } from "./components/maltheComponent";
 import { NikoPage } from "./components/nikoNightNinja";
 import { sofusComponent } from "./components/sofusComponent";
 import { SarahKomponent } from "./components/SarahScreen";
+import { mathiasComponent } from "./components/mathiasComponent";
 
 const Stack = createNativeStackNavigator();
 
