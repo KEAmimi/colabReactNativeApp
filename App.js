@@ -26,7 +26,7 @@ export default function App() {
           <Stack.Screen name="NikoPage" component={NikoPage} />
           <Stack.Screen name="SofusPage" component={sofusComponent} />
           <Stack.Screen name="SarahPage" component={SarahKomponent} />
-          <Stack.Screen name="MathiasPage" component={maltheComponent} />
+          <Stack.Screen name="MathiasPage" component={mathiasComponent} />
 
         </Stack.Navigator>
       </NavigationContainer>
