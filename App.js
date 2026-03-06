@@ -9,6 +9,7 @@ import { NikoPage } from "./components/nikoNightNinja";
 import { sofusComponent } from "./components/sofusComponent";
 import { SarahKomponent } from "./components/SarahScreen";
 import { mathiasComponent } from "./components/mathiasComponent";
+import { jonsComponent } from "./components/jonsComponent";
 
 const Stack = createNativeStackNavigator();
 
@@ -16,7 +17,10 @@ export default function App() {
   return (
     <SafeAreaProvider>
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="LandingPage" screenOptions={{ headerShown: true }}>
+        <Stack.Navigator
+          initialRouteName="LandingPage"
+          screenOptions={{ headerShown: true }}
+        >
           <Stack.Screen name="LandingPage" component={LandingPage} />
           <Stack.Screen name="MikkelsPage" component={MikkelsPage} />
           <Stack.Screen name="MalthePage" component={maltheComponent} />
@@ -24,7 +28,7 @@ export default function App() {
           <Stack.Screen name="SofusPage" component={sofusComponent} />
           <Stack.Screen name="SarahPage" component={SarahKomponent} />
           <Stack.Screen name="MathiasPage" component={mathiasComponent} />
-
+          <Stack.Screen name="JonPage" component={jonsComponent} />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>
@@ -86,6 +90,14 @@ function LandingPage({ navigation, route }) {
         style={styles.button}
       >
         <Text>Mathias' Page</Text>
+      </Pressable>
+      <Pressable
+        onPress={() => {
+          navigateTo("JonPage");
+        }}
+        style={styles.button}
+      >
+        <Text>jons Page</Text>
       </Pressable>
     </View>
   );
