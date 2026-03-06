@@ -16,10 +16,7 @@ export default function App() {
   return (
     <SafeAreaProvider>
       <NavigationContainer>
-        <Stack.Navigator
-          initialRouteName="LandingPage"
-          screenOptions={{ headerShown: true }}
-        >
+        <Stack.Navigator initialRouteName="LandingPage" screenOptions={{ headerShown: true }}>
           <Stack.Screen name="LandingPage" component={LandingPage} />
           <Stack.Screen name="MikkelsPage" component={MikkelsPage} />
           <Stack.Screen name="MalthePage" component={maltheComponent} />
