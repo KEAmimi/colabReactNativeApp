@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet } from "react-native-web";
 
-export default function SarahKomponent() {
+export function SarahKomponent() {
   return (
     <View style={styles.container}>
 
