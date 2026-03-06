@@ -25,6 +25,8 @@ export default function App() {
           <Stack.Screen name="NikoPage" component={NikoPage} />
           <Stack.Screen name="SofusPage" component={sofusComponent} />
           <Stack.Screen name="SarahPage" component={SarahKomponent} />
+          <Stack.Screen name="MathiasPage" component={maltheComponent.js} />
+
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>
@@ -78,6 +80,14 @@ function LandingPage({ navigation, route }) {
         style={styles.button}
       >
         <Text>Sarahs Page</Text>
+      </Pressable>
+      <Pressable
+        onPress={() => {
+          navigateTo("MathiasPage");
+        }}
+        style={styles.button}
+      >
+        <Text>Mathias' Page</Text>
       </Pressable>
     </View>
   );
