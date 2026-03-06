@@ -29,12 +29,13 @@ function LandingPage({ navigation, route }) {
   }
 
   return (
-    <View>
+    <View style={styles.page}>
       <Text>Dette er landing pagen for vores collaborative app</Text>
       <Pressable
         onPress={() => {
           navigateTo("MikkelsPage");
         }}
+        style={styles.button}
       >
         <Text>MikkelsPage</Text>
       </Pressable>
@@ -48,5 +49,16 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
+  },
+  button: {
+    padding: 10,
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: "black",
+    backgroundColor: "white",
+  },
+  page: {
+    padding: 10,
+    gap: 20,
   },
 });
