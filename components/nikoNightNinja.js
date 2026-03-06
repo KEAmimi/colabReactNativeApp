@@ -1,7 +1,7 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View } from "react-native";
 
-export default function App() {
+export function NikoPage() {
   return (
     <View style={styles.container}>
       <Text style={styles.emoji}>🥷💻🌙</Text>
@@ -9,7 +9,8 @@ export default function App() {
       <Text style={styles.titel}>Night Coding Ninja</Text>
 
       <Text style={styles.beskrivelse}>
-        Skriver kode sent om natten og løser problemer, mens resten af verden sover.
+        Skriver kode sent om natten og løser problemer, mens resten af verden
+        sover.
       </Text>
 
       <Text style={styles.beskrivelse}>
@@ -28,9 +29,9 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#0b1020',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#0b1020",
+    alignItems: "center",
+    justifyContent: "center",
     padding: 20,
   },
   emoji: {
@@ -39,15 +40,15 @@ const styles = StyleSheet.create({
   },
   titel: {
     fontSize: 26,
-    fontWeight: 'bold',
-    color: 'white',
+    fontWeight: "bold",
+    color: "white",
     marginBottom: 15,
-    textAlign: 'center',
+    textAlign: "center",
   },
   beskrivelse: {
     fontSize: 18,
-    color: '#d1d5db',
-    textAlign: 'center',
+    color: "#d1d5db",
+    textAlign: "center",
     marginBottom: 15,
   },
 });

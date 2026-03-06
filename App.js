@@ -4,6 +4,10 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { MikkelsPage } from "./components/mikkelsComponent";
+import { maltheComponent } from "./components/maltheComponent";
+import { NikoPage } from "./components/nikoNightNinja";
+import { sofusComponent } from "./components/sofusComponent";
+import { SarahKomponent } from "./components/SarahScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -17,6 +21,10 @@ export default function App() {
         >
           <Stack.Screen name="LandingPage" component={LandingPage} />
           <Stack.Screen name="MikkelsPage" component={MikkelsPage} />
+          <Stack.Screen name="MalthePage" component={maltheComponent} />
+          <Stack.Screen name="NikoPage" component={NikoPage} />
+          <Stack.Screen name="SofusPage" component={sofusComponent} />
+          <Stack.Screen name="SarahPage" component={SarahKomponent} />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>
@@ -37,7 +45,39 @@ function LandingPage({ navigation, route }) {
         }}
         style={styles.button}
       >
-        <Text>MikkelsPage</Text>
+        <Text>Mikkels Page</Text>
+      </Pressable>
+      <Pressable
+        onPress={() => {
+          navigateTo("MalthePage");
+        }}
+        style={styles.button}
+      >
+        <Text>Malthes Page</Text>
+      </Pressable>
+      <Pressable
+        onPress={() => {
+          navigateTo("NikoPage");
+        }}
+        style={styles.button}
+      >
+        <Text>Nikos Page</Text>
+      </Pressable>
+      <Pressable
+        onPress={() => {
+          navigateTo("SofusPage");
+        }}
+        style={styles.button}
+      >
+        <Text>Sofus' Page</Text>
+      </Pressable>
+      <Pressable
+        onPress={() => {
+          navigateTo("SarahPage");
+        }}
+        style={styles.button}
+      >
+        <Text>Sarahs Page</Text>
       </Pressable>
     </View>
   );
